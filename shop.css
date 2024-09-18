@@ -1,0 +1,579 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.header-before,
+.h-info {
+  display: flex;
+}
+#h1 img {
+  margin-left: 6%;
+}
+.header-before {
+  justify-content: center;
+  background-color: aquamarine;
+  padding: 20px;
+}
+
+.header-before p,
+.header-after p {
+  margin: 0;
+  padding: 0;
+}
+
+.header-before a {
+  text-decoration: none;
+}
+
+.h-info {
+  width: 90%;
+  justify-content: space-between;
+}
+
+.header-after {
+  background-color: rgb(226, 226, 226);
+  padding: 20px;
+}
+
+.header-after p {
+  margin-left: 5%;
+}
+
+#h1,
+nav ul,
+header {
+  display: flex;
+  align-items: center;
+}
+
+#h1 {
+  width: 70%;
+}
+
+#h2 {
+  width: 30%;
+  padding-top: 15px;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  margin: 0 20px;
+}
+
+header {
+  box-shadow: 0 4px 2px -2px gray;
+  padding: 10px 0 10px 0;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 2;
+}
+
+input[type="search"]:focus {
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+
+.search img {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.search {
+  border: 1px solid grey;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  margin-left: 15%;
+  margin-right: 15%;
+  width: 60%;
+  position: relative;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: green;
+}
+
+footer {
+  margin-top: 30px;
+}
+
+.f1 {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #9ddbba;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0;
+  padding: 10px;
+}
+
+#f12 h4 {
+  font-weight: 100;
+}
+
+#f13,
+.f2,
+#f11 {
+  display: flex;
+}
+
+#f13 input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  width: 250px;
+}
+
+#f13 button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #333;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+
+#b {
+  font-size: 1.15rem;
+}
+
+#f22 ul,
+#f23 ul {
+  list-style: none;
+  font-size: 1.2rem;
+  margin-left: -50px;
+}
+.f22-main li:hover {
+  padding-left: 5px;
+}
+
+#f22 ul li,
+#f23 ul li {
+  margin: 10px;
+}
+
+#f21,
+#f24 {
+  width: 30%;
+}
+.f22-main {
+  width: 40%;
+  justify-content: space-evenly;
+}
+
+.f2 {
+  color: rgb(143, 136, 136);
+  margin-top: 20px;
+  font-size: 1.2rem;
+  margin-left: 100px;
+}
+
+#b {
+  color: black;
+  font-size: 1.2rem;
+}
+
+.f3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.2rem;
+  margin-top: 30px;
+  box-shadow: 0px -5px 5px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+}
+
+#f31 {
+  margin-left: 20px;
+}
+
+#f32 {
+  margin-right: 200px;
+}
+.f22-main {
+  display: flex;
+}
+
+#f22 li:hover,
+#f23 li:hover {
+  color: yellowgreen;
+  cursor: pointer;
+}
+
+.menu {
+  display: none;
+}
+
+/* <!---------------------SHOP-------------------------> */
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-top: 50px;
+}
+
+.item {
+  border: 1px solid rgb(142, 212, 2);
+  padding: 20px;
+  width: 22%;
+  border-radius: 25px;
+  margin: 20px 0 20px 0;
+  position: relative;
+}
+
+.image {
+  position: relative;
+  overflow: hidden;
+}
+
+.image span {
+  position: absolute;
+  background-color: rgb(254, 159, 159);
+  border-radius: 20px;
+  font-size: 1rem;
+  padding: 5px 8px 5px 8px;
+  margin: 10px;
+}
+
+.image img {
+  border-radius: 20px;
+  width: 100%;
+  transition: opacity 0.3s ease, transform 2s ease;
+}
+
+.image img.first-image {
+  opacity: 1;
+}
+
+.image img.second-image {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform-origin: center;
+}
+
+.image:hover img.first-image {
+  opacity: 0;
+}
+
+.image:hover img.second-image {
+  opacity: 1;
+  transform: scale(1.3);
+}
+
+.image:hover .hove-buttons {
+  opacity: 1;
+  transition-delay: 0.25s;
+}
+
+.tooltip {
+  position: absolute;
+  bottom: 130%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgb(11, 144, 4);
+  color: #fff;
+  text-align: center;
+  padding: 5px;
+  border-radius: 5px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s;
+  white-space: nowrap;
+}
+
+.tooltip::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 5px solid;
+  border-color: #333 transparent transparent transparent;
+}
+
+.button:hover .tooltip {
+  opacity: 1;
+  visibility: visible;
+}
+
+.hove-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+#buttons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 170px;
+  background-color: transparent;
+}
+
+.button {
+  position: relative;
+  padding: 10px;
+  border-radius: 50%;
+  color: rgb(11, 144, 4);
+  background-color: rgb(231, 230, 229);
+  cursor: pointer;
+}
+
+.button:hover {
+  color: white;
+  background-color: rgb(11, 144, 4);
+}
+
+#category {
+  color: gray;
+}
+
+#star {
+  color: gold;
+  font-size: 1.2rem;
+}
+
+#name {
+  font-size: 1.3rem;
+  margin-bottom: 0;
+}
+
+#op {
+  color: rgb(17, 116, 70);
+  font-size: 1.5rem;
+}
+
+#dp {
+  text-decoration: line-through;
+  font-size: 1rem;
+  color: rgb(167, 161, 161);
+}
+
+.price {
+  margin-top: 15px;
+}
+
+.desc-last {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pages-main {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.pages {
+  display: flex;
+  width: 400px;
+  padding: 20px;
+  justify-content: space-evenly;
+}
+
+.page {
+  margin: 0 10px 0 10px;
+  padding: 15px;
+}
+
+.page:hover {
+  color: white;
+  background-color: rgb(57, 127, 121);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 550px) {
+  .header-before {
+    display: none;
+  }
+  header {
+    display: block;
+  }
+  #h1 + img {
+    width: 70%;
+  }
+  #h2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  #h2 input {
+    width: 80%;
+  }
+  .search {
+    width: 100%;
+  }
+
+  .f1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #f11,
+  #f12 {
+    font-size: 0.9rem;
+  }
+  #f12 {
+    display: none;
+  }
+  .f2 {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5%;
+    padding: 20px;
+  }
+  #f21,
+  #f22,
+  #f23 {
+    width: 100%;
+  }
+  .f22-main {
+    display: flex;
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  #f211,
+  #f24,
+  #h1 nav {
+    display: none;
+  }
+
+  .menu {
+    display: block;
+    position: absolute;
+    right: 30px;
+  }
+  /* <----------------------MAIN-----------------> */
+  .item {
+    width: 45%;
+  }
+}
+@media (min-width: 900px) and (max-width: 1100px) {
+  #h1 img {
+    margin-left: 0;
+    width: 200px;
+  }
+  .f2 {
+    margin-left: 50px;
+  }
+  .s311 {
+    padding: 0;
+    width: 130px;
+  }
+  #s5img {
+    width: 50%;
+  }
+  #f211 img {
+    width: 240px;
+  }
+}
+
+/* chat gpt */
+
+
+/* Cart and Wishlist icon styling */
+.nav-list li a i {
+  margin-right: 5px;
+  font-size: 1.2rem;
+  color: black;
+}
+
+#cart-count, #wishlist-count {
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  padding: 3px 7px;
+  font-size: 12px;
+  position: absolute;
+  top: -10px;
+  right: -15px;
+}
+
+.cart-icon, .wishlist-icon {
+  position: relative;
+}
+
+/* Styling for wishlist count and cart count */
+#cart-count {
+  font-size: 0.8rem;
+}
+
+#wishlist-count {
+  font-size: 0.8rem;
+}
+
+/* On hover, change color of cart and wishlist icons */
+.nav-list li a:hover i {
+  color: green;
+}
+
+/* For mobile view, adjust the cart and wishlist icons */
+@media only screen and (max-width: 550px) {
+  #cart-count, #wishlist-count {
+    right: -5px;
+    top: -5px;
+  }
+
+  /* Make the cart and wishlist icons larger in mobile view */
+  .nav-list li a i {
+    font-size: 1.5rem;
+  }
+
+  .header-before {
+    display: none;
+  }
+}
+
+
+
+/* styles for cart and wishlist items */
+.cart-item, .wishlist-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.cart-item img, .wishlist-item img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.remove-item, .remove-wishlist-item {
+  margin-left: auto;
+  cursor: pointer;
+  color: red;
+}

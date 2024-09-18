@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart & Wishlist</title>
+    <link rel="stylesheet" href="wish.css">
+</head>
+<body>
+    <header>
+        <div class="cart-info">
+            Cart Items: <span id="cart-count">0</span>
+        </div>
+        <div class="wishlist-info">
+            Wishlist Items: <span id="wishlist-count">0</span>
+        </div>
+    </header>
+
+    <div class="item">
+        <div class="image">
+            <span>Hot</span>
+            <img src="/assets/product-1-1.jpg" alt="Product Image" class="first-image">
+            <img src="/assets/product-1-2.jpg" alt="Product Image" class="second-image">
+            <div class="hover-buttons">
+                <div class="button">
+                    <i class="fas fa-heart icon wishlist-btn"></i>
+                    <div class="tooltip">Add to Wishlist</div>
+                </div>
+                <div class="button">
+                    <i class="fas fa-shopping-cart icon cart-btn"></i>
+                    <div class="tooltip">Add to Cart</div>
+                </div>
+            </div>
+        </div>
+        <div class="desc">
+            <span id="category">Clothing</span>
+            <p id="name">Colorful Pattern Shirts</p>
+            <div class="stars">
+                <span>&#9734;</span>
+                <span>&#9734;</span>
+                <span>&#9734;</span>
+                <span>&#9734;</span>
+                <span>&#9734;</span>
+            </div>
+            <div class="desc-last">
+                <div class="price">
+                    <span id="op">$238.66</span>
+                    <span id="dp">$245.99</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

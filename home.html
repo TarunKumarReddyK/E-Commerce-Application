@@ -1,0 +1,943 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="home.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="header-before">
+            <div class="h-info">
+                <p>8088994060 &nbsp;&nbsp;&nbsp; TARUN</p>
+                <p>Super Value Deals</p>
+                <p><a href="login.html">Login/Signup</a></p>
+            </div>
+        </div>
+        <header>
+            <div id="h1">
+                <img src="/assets/logo.jpg" alt="">
+                <div class="menu">
+                    <img src="/assets/menu-burger.svg" alt="" class="burger-menu" width="40px">
+                </div>
+                <nav>
+                    <ul class="nav-list">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="account.html">Account</a></li>
+                        <li><a href="#">Compare</a></li>
+                        <li><a href="login.html">Login</a></li>
+                        <li class="cart-icon">
+                            <a href="cart.html">
+                                <i class="fas fa-shopping-cart"></i> Cart
+                                <span id="cart-count">0</span>
+                            </a>
+                        </li>
+                        
+                        <li class="wishlist-icon">
+                            <a href="wishlist.html">
+                                <i class="fas fa-heart"></i> Wishlist
+                                <span id="wishlist-count">0</span>
+                            </a>
+                        </li> <!-- Cart count span -->
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <div class="header-after">
+            <p>Home</p>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="section1">
+            <div class="s1">
+                <p style="font-size: 1.4rem;">Hot Promotions</p>
+                <h1>Fashion Trending <span style="color: rgb(6, 142, 130); font-size: 3rem;"> Great <br> Collection
+                </h1></span>
+                <p style="color: gray; font-size: 1.3rem;">Save more with coupons & up tp 20% off</p>
+                <button id="s1-button">Shop Now</button>
+            </div>
+            <div class="s1-img"></div>
+        </div>
+
+        <div class="section2">
+            <div class="section2-sub">
+                <div class="s21">
+                    <div id="s21">
+                        <h1><span style="color: rgb(6, 142, 130);">Popular</span> Categories</h1>
+                    </div>
+                    <div id="s21">
+                        <span id="s2-nav">&lt;</span><span id="s2-nav">&gt;</span>
+                    </div>
+                </div>
+                <div class="s22">
+                    <div class="s2-items">
+                        <div id="s2-item-img"><img src="/assests/product-1-1.jpg" alt=""></div>
+                        <div id="s2-item-title">Shirts</div>
+                    </div>
+                    <div class="s2-items">
+                        <div id="s2-item-img"><img src="/assests/product-10-1.jpg" alt=""></div>
+                        <div id="s2-item-title">Sandles</div>
+                    </div>
+                    <div class="s2-items">
+                        <div id="s2-item-img"><img src="/assests/product-3-1.jpg" alt=""></div>
+                        <div id="s2-item-title">Shoes</div>
+                    </div>
+                    <div class="s2-items">
+                        <div id="s2-item-img"><img src="/assests/product-4-1.jpg" alt=""></div>
+                        <div id="s2-item-title">Pants</div>
+                    </div>
+                    <div class="s2-items">
+                        <div id="s2-item-img"><img src="/assests/product-5-1.jpg" alt=""></div>
+                        <div id="s2-item-title">Shirts</div>
+                    </div>
+                    <div class="s2-items">
+                        <div id="s2-item-img"><img src="/assests/product-13-1.jpg" alt=""></div>
+                        <div id="s2-item-title">Hand Bag</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section3">
+            <div class="s3-sub">
+                <div class="s31">
+                    <div class="s311 s311-colored">
+                        <p>Featured</p>
+                    </div>
+                    <div class="s311">
+                        <p>Popular</p>
+                    </div>
+                    <div class="s311">
+                        <p>New Arrivals</p>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="item">
+                        <div class="image">
+                            <span>Hot</span>
+                            <img src="/assests/product-1-1.jpg" alt="" class="first-image">
+                            <img src="/assests/product-1-2.jpg" alt="" class="second-image">
+                            <div class="hove-buttons">
+                                <div id="buttons">
+                                    <div class="button">
+                                        <i class="fas fa-heart icon"></i>
+                                        <div class="tooltip">Like</div>
+                                    </div>
+                                    <div class="button">
+                                        <i class="fas fa-shopping-cart icon"></i>
+                                        <div class="tooltip">Add to Cart</div>
+                                    </div>
+                                    <div class="button">
+                                        <i class="fas fa-list icon"></i>
+                                        <div class="tooltip">Wishlist</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="desc">
+                            <span id="category">Clothing</span>
+                            <p id="name">Colorful Pattern Shirts</p>
+                            <span id="star">&#9734</span>
+                            <span id="star">&#9734</span>
+                            <span id="star">&#9734</span>
+                            <span id="star">&#9734</span>
+                            <span id="star">&#9734</span>
+                            <div class="desc-last">
+
+                                <div class="price">
+                                    <span id="op">$238.66</span>
+                                    <span id="dp">$245.99</span>
+                                </div>
+                                <div class="button">
+                                    <img src="/assests/icon-cart.svg" alt="" width="30px">
+                                    <div class="tooltip">Add to Cart</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="image">
+                            <span>Hot</span>
+                            <img src="/assests/product-2-1.jpg" alt="" class="first-image">
+                            <img src="/assests/product-2-2.jpg" alt="" class="second-image">
+                            <div class="hove-buttons">
+                                <div id="buttons">
+                                    <div class="button">
+                                        <i class="fas fa-heart icon"></i>
+                                        <div class="tooltip">Like</div>
+                                    </div>
+                                    <div class="button">
+                                        <i class="fas fa-shopping-cart icon"></i>
+                                        <div class="tooltip">Add to Cart</div>
+                                    </div>
+                                    <div class="button">
+                                        <i class="fas fa-list icon"></i>
+                                        <div class="tooltip">Wishlist</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="desc">
+                            <span id="category">Clothing</span>
+                            <p id="name">Colorful Pattern Shirts</p>
+                            <span id="star">&#9734</span>
+                            <span id="star">&#9734</span>
+                            <span id="star">&#9734</span>
+                            <span id="star">&#9734</span>
+                            <span id="star">&#9734</span>
+                            <div class="desc-last">
+
+                                <div class="price">
+                                    <span id="op">$238.66</span>
+                                    <span id="dp">$245.99</span>
+                                </div>
+                                <div class="button">
+                                    <img src="/assests/icon-cart.svg" alt="" width="30px">
+                                    <div class="tooltip">Add to Cart</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="image">
+                            <span>Hot</span>
+                            <img src="/assests/product-3-1.jpg" alt="" class="first-image">
+                            <img src="/assests/product-3-2.jpg" alt="" class="second-image">
+                            <div class="hove-buttons">
+                                <div id="buttons">
+                                    <div class="button">
+                                        <i class="fas fa-heart icon"></i>
+                                        <div class="tooltip">Like</div>
+                                    </div>
+                                    <div class="button">
+                                        <i class="fas fa-shopping-cart icon"></i>
+                                        <div class="tooltip">Add to Cart</div>
+                                    </div>
+                                    <div class="button">
+                                        <i class="fas fa-list icon"></i>
+                                        <div class="tooltip">Wishlist</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="desc">
+                            <span id="category">Clothing</span>
+                            <p id="name">Colorful Pattern Shirts</p>
+                            <span id="star">&#9734</span>
+                            <span id="star">&#9734</span>
+                            <span id="star">&#9734</span>
+                            <span id="star">&#9734</span>
+                            <span id="star">&#9734</span>
+                            <div class="desc-last">
+
+                                <div class="price">
+                                    <span id="op">$238.66</span>
+                                    <span id="dp">$245.99</span>
+                                </div>
+                                <div class="button">
+                                    <img src="/assests/icon-cart.svg" alt="" width="30px">
+                                    <div class="tooltip">Add to Cart</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="image">
+                            <span>Hot</span>
+                            <img src="/assests/product-4-1.jpg" alt="" class="first-image">
+                            <img src="/assests/product-4-2.jpg" alt="" class="second-image">
+                            <div class="hove-buttons">
+                                <div id="buttons">
+                                    <div class="button">
+                                        <i class="fas fa-heart icon"></i>
+                                        <div class="tooltip">Like</div>
+                                    </div>
+                                    <div class="button">
+                                        <i class="fas fa-shopping-cart icon"></i>
+                                        <div class="tooltip">Add to Cart</div>
+                                    </div>
+                                    <div class="button">
+                                        <i class="fas fa-list icon"></i>
+                                        <div class="tooltip">Wishlist</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="desc">
+                            <span id="category">Clothing</span>
+                            <p id="name">Colorful Pattern Shirts</p>
+                            <span id="star">&#9734</span>
+                            <span id="star">&#9734</span>
+                            <span id="star">&#9734</span>
+                            <span id="star">&#9734</span>
+                            <span id="star">&#9734</span>
+                            <div class="desc-last">
+
+                                <div class="price">
+                                    <span id="op">$238.66</span>
+                                    <span id="dp">$245.99</span>
+                                </div>
+                                <div class="button">
+                                    <img src="/assests/icon-cart.svg" alt="" width="30px">
+                                    <div class="tooltip">Add to Cart</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="image">
+                            <span>Hot</span>
+                            <img src="/assests/product-5-1.jpg" alt="" class="first-image">
+                            <img src="/assests/product-5-2.jpg" alt="" class="second-image">
+                            <div class="hove-buttons">
+                                <div id="buttons">
+                                    <div class="button">
+                                        <i class="fas fa-heart icon"></i>
+                                        <div class="tooltip">Like</div>
+                                    </div>
+                                    <div class="button">
+                                        <i class="fas fa-shopping-cart icon"></i>
+                                        <div class="tooltip">Add to Cart</div>
+                                    </div>
+                                    <div class="button">
+                                        <i class="fas fa-list icon"></i>
+                                        <div class="tooltip">Wishlist</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="desc">
+                            <span id="category">Clothing</span>
+                            <p id="name">Colorful Pattern Shirts</p>
+                            <span id="star">&#9734</span>
+                            <span id="star">&#9734</span>
+                            <span id="star">&#9734</span>
+                            <span id="star">&#9734</span>
+                            <span id="star">&#9734</span>
+                            <div class="desc-last">
+
+                                <div class="price">
+                                    <span id="op">$238.66</span>
+                                    <span id="dp">$245.99</span>
+                                </div>
+                                <div class="button">
+                                    <img src="/assests/icon-cart.svg" alt="" width="30px">
+                                    <div class="tooltip">Add to Cart</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="image">
+                            <span>Hot</span>
+                            <img src="/assests/product-6-1.jpg" alt="" class="first-image">
+                            <img src="/assests/product-6-2.jpg" alt="" class="second-image">
+                            <div class="hove-buttons">
+                                <div id="buttons">
+                                    <div class="button">
+                                        <i class="fas fa-heart icon"></i>
+                                        <div class="tooltip">Like</div>
+                                    </div>
+                                    <div class="button">
+                                        <i class="fas fa-shopping-cart icon"></i>
+                                        <div class="tooltip">Add to Cart</div>
+                                    </div>
+                                    <div class="button">
+                                        <i class="fas fa-list icon"></i>
+                                        <div class="tooltip">Wishlist</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="desc">
+                            <span id="category">Clothing</span>
+                            <p id="name">Colorful Pattern Shirts</p>
+                            <span id="star">&#9734</span>
+                            <span id="star">&#9734</span>
+                            <span id="star">&#9734</span>
+                            <span id="star">&#9734</span>
+                            <span id="star">&#9734</span>
+                            <div class="desc-last">
+
+                                <div class="price">
+                                    <span id="op">$238.66</span>
+                                    <span id="dp">$245.99</span>
+                                </div>
+                                <div class="button">
+                                    <img src="/assests/icon-cart.svg" alt="" width="30px">
+                                    <div class="tooltip">Add to Cart</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="image">
+                            <span>Hot</span>
+                            <img src="/assests/product-7-1.jpg" alt="" class="first-image">
+                            <img src="/assests/product-7-2.jpg" alt="" class="second-image">
+                            <div class="hove-buttons">
+                                <div id="buttons">
+                                    <div class="button">
+                                        <i class="fas fa-heart icon"></i>
+                                        <div class="tooltip">Like</div>
+                                    </div>
+                                    <div class="button">
+                                        <i class="fas fa-shopping-cart icon"></i>
+                                        <div class="tooltip">Add to Cart</div>
+                                    </div>
+                                    <div class="button">
+                                        <i class="fas fa-list icon"></i>
+                                        <div class="tooltip">Wishlist</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="desc">
+                            <span id="category">Clothing</span>
+                            <p id="name">Colorful Pattern Shirts</p>
+                            <span id="star">&#9734</span>
+                            <span id="star">&#9734</span>
+                            <span id="star">&#9734</span>
+                            <span id="star">&#9734</span>
+                            <span id="star">&#9734</span>
+                            <div class="desc-last">
+
+                                <div class="price">
+                                    <span id="op">$238.66</span>
+                                    <span id="dp">$245.99</span>
+                                </div>
+                                <div class="button">
+                                    <img src="/assests/icon-cart.svg" alt="" width="30px">
+                                    <div class="tooltip">Add to Cart</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="image">
+                            <span>Hot</span>
+                            <img src="/assests/product-8-1.jpg" alt="" class="first-image">
+                            <img src="/assests/product-8-2.jpg" alt="" class="second-image">
+                            <div class="hove-buttons">
+                                <div id="buttons">
+                                    <div class="button">
+                                        <i class="fas fa-heart icon"></i>
+                                        <div class="tooltip">Like</div>
+                                    </div>
+                                    <div class="button">
+                                        <i class="fas fa-shopping-cart icon"></i>
+                                        <div class="tooltip">Add to Cart</div>
+                                    </div>
+                                    <div class="button">
+                                        <i class="fas fa-list icon"></i>
+                                        <div class="tooltip">Wishlist</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="desc">
+                            <span id="category">Clothing</span>
+                            <p id="name">Colorful Pattern Shirts</p>
+                            <span id="star">&#9734</span>
+                            <span id="star">&#9734</span>
+                            <span id="star">&#9734</span>
+                            <span id="star">&#9734</span>
+                            <span id="star">&#9734</span>
+                            <div class="desc-last">
+
+                                <div class="price">
+                                    <span id="op">$238.66</span>
+                                    <span id="dp">$245.99</span>
+                                </div>
+                                <div class="button">
+                                    <img src="/assests/icon-cart.svg" alt="" width="30px">
+                                    <div class="tooltip">Add to Cart</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section4">
+            <div class="timercard timercard1">
+                <h1 style="color: rgb(6,142,130);">Deals of the Day</h1>
+                <p style="color: gray;">Limited Quantities</p>
+                <div id="tc-name">
+                    <p>Summer Collection New</p>
+                    <p>Modern Design</p>
+                </div>
+                <span id="oprice">$138.99 &nbsp;</span><span id="dprice">$159.99</span>
+                <div id="tctimer">
+                    <span id="tinfo">Hurry up! offer ends in:</span>
+                    <div id="timer">
+                        <div id="time">
+                            <div id="t1">02</div>
+                            <div id="t2">Days</div>
+                        </div><span style="margin-bottom: 25px;">:</span>
+                        <div id="time">
+                            <div id="t1">22</div>
+                            <div id="t2">Hours</div>
+                        </div><span style="margin-bottom: 25px;">:</span>
+                        <div id="time">
+                            <div id="t1">57</div>
+                            <div id="t2">Mimutes</div>
+                        </div><span style="margin-bottom: 25px;">:</span>
+                        <div id="time">
+                            <div id="t1">58</div>
+                            <div id="t2">Seconds</div>
+                        </div>
+                    </div>
+                </div>
+                <button id="tc-button">Shop Now</button>
+            </div>
+            <div class="timercard timercard2">
+                <h1 style="color: rgb(6,142,130);">Women Clothing</h1>
+                <p style="color: gray;">Shirts and Bags</p>
+                <div id="tc-name">
+                    <p>Try Something New</p>
+                    <p>Vaccation</p>
+                </div>
+                <span id="oprice">$199.99 &nbsp;</span><span id="dprice">$278.99</span>
+                <div id="tctimer">
+                    <span id="tinfo">Hurry up! offer ends in:</span>
+                    <div id="timer">
+                        <div id="time">
+                            <div id="t1">02</div>
+                            <div id="t2">Days</div>
+                        </div><span style="margin-bottom: 25px;">:</span>
+                        <div id="time">
+                            <div id="t1">22</div>
+                            <div id="t2">Hours</div>
+                        </div><span style="margin-bottom: 25px;">:</span>
+                        <div id="time">
+                            <div id="t1">57</div>
+                            <div id="t2">Mimutes</div>
+                        </div><span style="margin-bottom: 25px;">:</span>
+                        <div id="time">
+                            <div id="t1">58</div>
+                            <div id="t2">Seconds</div>
+                        </div>
+                    </div>
+                </div>
+                <button id="tc-button">Shop Now</button>
+            </div>
+        </div>
+
+        <div class="section6">
+            <div class="section2-sub">
+                <div class="s21">
+                    <div id="s21">
+                        <h1><span style="color: rgb(6, 142, 130);">New</span> Arrivals</h1>
+                    </div>
+                    <div id="s21">
+                        <span id="s2-nav">&lt;</span><span id="s2-nav">&gt;</span>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="item">
+                        <div class="image">
+                            <span>Hot</span>
+                            <img src="/assests/product-9-1.jpg" alt="" class="first-image">
+                            <img src="/assests/product-9-2.jpg" alt="" class="second-image">
+                            <div class="hove-buttons">
+                                <div id="buttons">
+                                    <div class="button">
+                                        <i class="fas fa-heart icon"></i>
+                                        <div class="tooltip">Like</div>
+                                    </div>
+                                    <div class="button">
+                                        <i class="fas fa-shopping-cart icon"></i>
+                                        <div class="tooltip">Add to Cart</div>
+                                    </div>
+                                    <div class="button">
+                                        <i class="fas fa-list icon"></i>
+                                        <div class="tooltip">Wishlist</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="desc">
+                            <span id="category">Clothing</span>
+                            <p id="name">Colorful Pattern Shirts</p>
+                            <span id="star">&#9734</span>
+                            <span id="star">&#9734</span>
+                            <span id="star">&#9734</span>
+                            <span id="star">&#9734</span>
+                            <span id="star">&#9734</span>
+                            <div class="desc-last">
+
+                                <div class="price">
+                                    <span id="op">$238.66</span>
+                                    <span id="dp">$245.99</span>
+                                </div>
+                                <div class="button">
+                                    <img src="/assests/icon-cart.svg" alt="" width="30px">
+                                    <div class="tooltip">Add to Cart</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="image">
+                            <span>Hot</span>
+                            <img src="/assests/product-10-1.jpg" alt="" class="first-image">
+                            <img src="/assests/product-10-2.jpg" alt="" class="second-image">
+                            <div class="hove-buttons">
+                                <div id="buttons">
+                                    <div class="button">
+                                        <i class="fas fa-heart icon"></i>
+                                        <div class="tooltip">Like</div>
+                                    </div>
+                                    <div class="button">
+                                        <i class="fas fa-shopping-cart icon"></i>
+                                        <div class="tooltip">Add to Cart</div>
+                                    </div>
+                                    <div class="button">
+                                        <i class="fas fa-list icon"></i>
+                                        <div class="tooltip">Wishlist</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="desc">
+                            <span id="category">Clothing</span>
+                            <p id="name">Colorful Pattern Shirts</p>
+                            <span id="star">&#9734</span>
+                            <span id="star">&#9734</span>
+                            <span id="star">&#9734</span>
+                            <span id="star">&#9734</span>
+                            <span id="star">&#9734</span>
+                            <div class="desc-last">
+
+                                <div class="price">
+                                    <span id="op">$238.66</span>
+                                    <span id="dp">$245.99</span>
+                                </div>
+                                <div class="button">
+                                    <img src="/assests/icon-cart.svg" alt="" width="30px">
+                                    <div class="tooltip">Add to Cart</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="image">
+                            <span>Hot</span>
+                            <img src="/assests/product-11-1.jpg" alt="" class="first-image">
+                            <img src="/assests/product-11-2.jpg" alt="" class="second-image">
+                            <div class="hove-buttons">
+                                <div id="buttons">
+                                    <div class="button">
+                                        <i class="fas fa-heart icon"></i>
+                                        <div class="tooltip">Like</div>
+                                    </div>
+                                    <div class="button">
+                                        <i class="fas fa-shopping-cart icon"></i>
+                                        <div class="tooltip">Add to Cart</div>
+                                    </div>
+                                    <div class="button">
+                                        <i class="fas fa-list icon"></i>
+                                        <div class="tooltip">Wishlist</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="desc">
+                            <span id="category">Clothing</span>
+                            <p id="name">Colorful Pattern Shirts</p>
+                            <span id="star">&#9734</span>
+                            <span id="star">&#9734</span>
+                            <span id="star">&#9734</span>
+                            <span id="star">&#9734</span>
+                            <span id="star">&#9734</span>
+                            <div class="desc-last">
+
+                                <div class="price">
+                                    <span id="op">$238.66</span>
+                                    <span id="dp">$245.99</span>
+                                </div>
+                                <div class="button">
+                                    <img src="/assests/icon-cart.svg" alt="" width="30px">
+                                    <div class="tooltip">Add to Cart</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="image">
+                            <span>Hot</span>
+                            <img src="/assests/product-12-1.jpg" alt="" class="first-image">
+                            <img src="/assests/product-12-2.jpg" alt="" class="second-image">
+                            <div class="hove-buttons">
+                                <div id="buttons">
+                                    <div class="button">
+                                        <i class="fas fa-heart icon"></i>
+                                        <div class="tooltip">Like</div>
+                                    </div>
+                                    <div class="button">
+                                        <i class="fas fa-shopping-cart icon"></i>
+                                        <div class="tooltip">Add to Cart</div>
+                                    </div>
+                                    <div class="button">
+                                        <i class="fas fa-list icon"></i>
+                                        <div class="tooltip">Wishlist</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="desc">
+                            <span id="category">Clothing</span>
+                            <p id="name">Colorful Pattern Shirts</p>
+                            <span id="star">&#9734</span>
+                            <span id="star">&#9734</span>
+                            <span id="star">&#9734</span>
+                            <span id="star">&#9734</span>
+                            <span id="star">&#9734</span>
+                            <div class="desc-last">
+
+                                <div class="price">
+                                    <span id="op">$238.66</span>
+                                    <span id="dp">$245.99</span>
+                                </div>
+                                <div class="button">
+                                    <img src="/assests/icon-cart.svg" alt="" width="30px">
+                                    <div class="tooltip">Add to Cart</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section5">
+            <div class="s51">
+                <div class="s5">
+                    <h2>Hot Releases</h2>
+                    <hr>
+                    <div id="s5-item">
+                        <div id="s5img">
+                            <img src="/assests/s5-1.jpg" alt="" width="100%">
+                        </div>
+                        <div id="s5desc">
+                            <p>Floral Print Casual Cotton Dress..</p>
+                            <span style="color: rgb(6, 142, 130);">$138.99</span>&nbsp;&nbsp;
+                            <span style="text-decoration: line-through; color: gray;">$189.90</span>
+                        </div>
+                    </div>
+                    <div id="s5-item">
+                        <div id="s5img">
+                            <img src="/assests/product-1-1.jpg" alt="" width="100%">
+                        </div>
+                        <div id="s5desc">
+                            <p>Floral Print Casual Cotton Dress..</p>
+                            <span style="color: rgb(6, 142, 130);">$138.99</span>&nbsp;&nbsp;
+                            <span style="text-decoration: line-through; color: gray;">$189.90</span>
+                        </div>
+                    </div>
+                    <div id="s5-item">
+                        <div id="s5img">
+                            <img src="/assests/product-2-1.jpg" alt="" width="100%">
+                        </div>
+                        <div id="s5desc">
+                            <p>Floral Print Casual Cotton Dress..</p>
+                            <span style="color: rgb(6, 142, 130);">$138.99</span>&nbsp;&nbsp;
+                            <span style="text-decoration: line-through; color: gray;">$189.90</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="s5">
+                    <h2>Deals & Outlet</h2>
+                    <hr>
+                    <div id="s5-item">
+                        <div id="s5img">
+                            <img src="/assests/product-3-1.jpg" alt="" width="100%">
+                        </div>
+                        <div id="s5desc">
+                            <p>Floral Print Casual Cotton Dress..</p>
+                            <span style="color: rgb(6, 142, 130);">$138.99</span>&nbsp;&nbsp;
+                            <span style="text-decoration: line-through; color: gray;">$189.90</span>
+                        </div>
+                    </div>
+                    <div id="s5-item">
+                        <div id="s5img">
+                            <img src="/assests/product-4-1.jpg" alt="" width="100%">
+                        </div>
+                        <div id="s5desc">
+                            <p>Floral Print Casual Cotton Dress..</p>
+                            <span style="color: rgb(6, 142, 130);">$138.99</span>&nbsp;&nbsp;
+                            <span style="text-decoration: line-through; color: gray;">$189.90</span>
+                        </div>
+                    </div>
+                    <div id="s5-item">
+                        <div id="s5img">
+                            <img src="/assests/product-5-1.jpg" alt="" width="100%">
+                        </div>
+                        <div id="s5desc">
+                            <p>Floral Print Casual Cotton Dress..</p>
+                            <span style="color: rgb(6, 142, 130);">$138.99</span>&nbsp;&nbsp;
+                            <span style="text-decoration: line-through; color: gray;">$189.90</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="s51">
+                <div class="s5">
+                    <h2>Top Selling</h2>
+                    <hr>
+                    <div id="s5-item">
+                        <div id="s5img">
+                            <img src="/assests/product-6-1.jpg" alt="" width="100%">
+                        </div>
+                        <div id="s5desc">
+                            <p>Floral Print Casual Cotton Dress..</p>
+                            <span style="color: rgb(6, 142, 130);">$138.99</span>&nbsp;&nbsp;
+                            <span style="text-decoration: line-through; color: gray;">$189.90</span>
+                        </div>
+                    </div>
+                    <div id="s5-item">
+                        <div id="s5img">
+                            <img src="/assests/product-7-1.jpg" alt="" width="100%">
+                        </div>
+                        <div id="s5desc">
+                            <p>Floral Print Casual Cotton Dress..</p>
+                            <span style="color: rgb(6, 142, 130);">$138.99</span>&nbsp;&nbsp;
+                            <span style="text-decoration: line-through; color: gray;">$189.90</span>
+                        </div>
+                    </div>
+                    <div id="s5-item">
+                        <div id="s5img">
+                            <img src="/assests/product-8-1.jpg" alt="" width="100%">
+                        </div>
+                        <div id="s5desc">
+                            <p>Floral Print Casual Cotton Dress..</p>
+                            <span style="color: rgb(6, 142, 130);">$138.99</span>&nbsp;&nbsp;
+                            <span style="text-decoration: line-through; color: gray;">$189.90</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="s5">
+                    <h2>Trendy</h2>
+                    <hr>
+                    <div id="s5-item">
+                        <div id="s5img">
+                            <img src="/assests/product-9-1.jpg" alt="" width="100%">
+                        </div>
+                        <div id="s5desc">
+                            <p>Floral Print Casual Cotton Dress..</p>
+                            <span style="color: rgb(6, 142, 130);">$138.99</span>&nbsp;&nbsp;
+                            <span style="text-decoration: line-through; color: gray;">$189.90</span>
+                        </div>
+                    </div>
+                    <div id="s5-item">
+                        <div id="s5img">
+                            <img src="/assests/product-10-1.jpg" alt="" width="100%">
+                        </div>
+                        <div id="s5desc">
+                            <p>Floral Print Casual Cotton Dress..</p>
+                            <span style="color: rgb(6, 142, 130);">$138.99</span>&nbsp;&nbsp;
+                            <span style="text-decoration: line-through; color: gray;">$189.90</span>
+                        </div>
+                    </div>
+                    <div id="s5-item">
+                        <div id="s5img">
+                            <img src="/assests/product-11-1.jpg" alt="" width="100%">
+                        </div>
+                        <div id="s5desc">
+                            <p>Floral Print Casual Cotton Dress..</p>
+                            <span style="color: rgb(6, 142, 130);">$138.99</span>&nbsp;&nbsp;
+                            <span style="text-decoration: line-through; color: gray;">$189.90</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="f1">
+            <div id="f11">
+                <img src="/assests/note.svg" alt="" height="30px" width="30px" style="margin-top: 12px;">
+                <p style="margin-left: 10px;">Sign in to Newsletter</p>
+            </div>
+            <div id="f12">
+                <h4>... and receive $25 for first shopping</h4>
+            </div>
+            <div id="f13">
+                <input type="email" name="" id="" placeholder="Enter your Email">
+                <button>Subscribe</button>
+            </div>
+        </div>
+        <div class="f2">
+            <div id="f21">
+                <div id="f211">
+                    <img src="/assests/logo.jpg" alt="">
+                </div>
+                <div id="f212">
+                    <p>Contact</p>
+                    <p><span id="b">Address: </span>13 Tlemcen Road, Street 32, Beb-Wahren</p>
+                    <p><span id="b">Phone: </span>1234567890 / 0987654321</p>
+                    <p><span id="b">Hours: </span>10:00 - 18:00, Mon - Sat</p>
+                </div>
+                <div id="f213">
+                    <p>Follow Me</p>
+                    <img src="/assests/socialmedia.png" alt="" width="200px" height="50px">
+                </div>
+            </div>
+            <div class="f22-main">
+                <div id="f22">
+                    <p><span id="b">Address</span></p>
+                    <ul>
+                        <li>About Us</li>
+                        <li>Delivery Information</li>
+                        <li>Privacy Policy</li>
+                        <li>Terms & Conditions</li>
+                        <li>Contact Us</li>
+                        <li>Support Center</li>
+                    </ul>
+                </div>
+                <div id="f23">
+                    <p><span id="b">My Account</span></p>
+                    <ul>
+                        <li>Sign in</li>
+                        <li>View Cart</li>
+                        <li>My WishList</li>
+                        <li>Track My Order</li>
+                        <li>Help</li>
+                        <li>Order</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="f24">
+                <p><span id="b">Secured Payments Gateways</span></p>
+                <img src="/assests/payment.png" alt="" style="margin-left: 20px;">
+            </div>
+        </div>
+        <div class="f3">
+            <div id="f31">&copy; 2024 TARUN, All Rights Reserved</div>
+            <div id="f31">Designed By TARUN</div>
+        </div>
+    </footer>
+
+</body>
+<script src="script.js"></script>
+
+</html>
